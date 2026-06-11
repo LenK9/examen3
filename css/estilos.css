@@ -1,0 +1,281 @@
+body{
+    background-color: rgb(26, 26, 26);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+}
+
+html {
+    scroll-behavior: smooth; /* Hace que el deslizamiento sea suave y elegante */
+}
+
+header {
+
+    background-color: #800020;
+    padding: 1px;
+    text-align: center;
+    font-size: 27px;
+    border-bottom: 6px solid #342323;
+    font-weight: bold;
+    border-radius: 20px;
+
+}
+
+.padre{
+    width: 95%;
+    margin: 10px auto;
+}
+
+.cuadrodefondo{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(../img/3.jpeg);
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-radius: 40px;
+
+}
+
+.separador{
+    display: flex;
+}
+
+nav{
+    background-color: rgb(72, 61, 139);
+    color: black;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+    width: 210px;
+    height: 550px;
+    margin-left: 15px;
+    border: 3px solid rgb(21, 21, 21);
+
+}
+
+.cajaboton{
+    display: block;
+    width: 140px;
+    min-width: 38px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: rgb(220, 220, 220);
+    text-align: center;
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid rgb(21, 21, 21);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.botonesdistancia td{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    
+}
+
+.cuadroimginicio{
+    text-align: center;
+}
+.cuadroimginicio img{
+    width: auto;
+    height: 10cm;
+    margin-top: 20px;
+    border-radius: 50px;
+    border: 2px solid rgb(21, 21, 21);
+
+}
+
+.tituloinicio{
+    
+    background-color: rgb(72, 61, 139, 0.8);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    width: auto;
+    text-align: center;
+}
+
+.cuadrotexto{
+
+    background-color: rgba(30, 28, 30, 0.874);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 25;
+    padding-bottom: 25;
+    border: 3px solid rgb(21, 21, 21);
+    border-radius: 20px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 25px;
+}
+.cuadrotexto h1{
+    text-align: center;
+    font-size: 35px;
+}
+
+.cuadroimgbienvenida{
+    text-align: center;
+}
+.cuadroimgbienvenida img{
+    border: 3px solid rgb(21, 21, 21);
+    width: auto;
+    height: 9cm;
+    border-radius: 20px;
+    margin-bottom: 28px;
+}
+
+.cuadroimghistoria{
+    text-align: center;
+}
+.cuadroimghistoria img{
+    width: auto;
+    height: 9cm;
+    border-radius: 20px;
+    border: 3px solid rgb(21, 21, 21);
+    margin-bottom: 30px;
+}
+
+.cuadrolista{
+    background-color: rgb(159, 25, 25);
+    color: #f5ecff;
+    font-style: italic;
+    border-radius: 20px;
+    border: 3px solid rgb(21, 21, 21);
+    text-align: left;
+    width: 280px;
+    height: auto;
+    padding-left: 10px;
+
+}
+.cuadroimgpersonajes img{
+    width: 5cm;
+    height: auto;
+    border-radius: 30px;
+    border: 3px solid rgb(21, 21, 21);
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.disenotabla{
+    border-collapse: collapse;
+    border: 2px solid white;
+}
+
+.textotabla{
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+
+.img_tplatos img{
+    width: 8cm;
+    height: auto;
+    border-radius: 20px;
+}
+
+footer{
+    background-color: #007A3D;
+    height: 95px;
+    text-align: center;
+    padding-top: 18px;
+    color: rgba(255, 255, 255, 0.601);
+    border-radius: 20px;
+
+}
+/* ====================================================
+   ESTILOS ESPECÍFICOS PARA EL VISOR DINÁMICO DE DANZAS
+   ==================================================== */
+
+.control-selector {
+    width: 100%;
+    max-width: 320px;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* Clases de control de visibilidad mediante JavaScript */
+.visor-oculto {
+    display: none; /* Oculta por completo el contenedor de la pantalla */
+
+}
+
+.visor-visible {
+    display: block; /* Muestra el contenedor en bloque */
+    text-align: center;
+    background-color: rgb(72, 61, 139); /* oscuro semitransparente interno */
+    padding: 20px;
+    border-radius: 30px;
+    border: 3px solid rgb(21, 21, 21);
+    margin-bottom: 40px;
+
+
+}
+
+.img-visor {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 15px;
+    border: 3px solid rgb(21, 21, 21);
+    margin-top: 10px;
+}
+
+.texto-visor {
+    font-size: 19px;
+    line-height: 1.5;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+/* Estilo para el nuevo campo de nombre */
+.control-entrada {
+    width: 100%;
+    max-width: 320px;
+    padding: 12px;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    border: 3px solid rgb(21, 21, 21);
+    border-radius: 12px;
+    background-color: rgb(240, 240, 240);
+    color: black;
+    margin-bottom: 15px; /* Espacio entre el campo de texto y el selector */
+}
+/* Espaciado interno para separar el botón del selector */
+.control-selector {
+    margin-bottom: 15px; /* Reducimos ligeramente el margen inferior */
+    border: 3px solid rgb(21, 21, 21);
+    
+}
+
+.cajabotonacep{
+    display: block;
+    width: 140px;
+    min-width: 38px;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: rgb(220, 220, 220);
+    text-align: center;
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid rgb(21, 21, 21);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Clase para resaltar el nombre del usuario en color rojo */
+.nombre-resaltado {
+    color: #ff4d4d; /* Un rojo vivo de alta visibilidad para pantallas oscuras */
+    font-weight: bold; /* Le da un grosor extra para que resalte más */
+}
