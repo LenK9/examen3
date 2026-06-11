@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen3</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <div class="padre">
+        <header>
+            <h1>
+                Examen de Jhonatan Mateo Quispe Lecoña
+            </h1>
+        </header>
+        <section class="cuadrodefondo">
+            <div class="cuadroimginicio">
+                <img src="../img/2.jpeg" alt="">
+            </div>
+            <div class="tituloinicio">
+                    <h1>LA PAZ<br>La Septima Maravilla del Mundo</h1>
+            </div>
+            <div class="separador">
+                <span>
+                    <nav> 
+                        <h1>MENU</h1>
+                        <table class="botonesdistancia">
+                            <tr>
+                                <td>
+                                    <a href="../index.html"class="cajaboton">BIENVENIDA</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="pag1.html#historia"class="cajaboton">HISTORIA</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="pag2.html#personajes"class="cajaboton">PERSONAJES</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="pag3.html#platos"class="cajaboton">PLATOS TIPICOS</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#danzas"class="cajaboton">DANZAS</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </nav>
+                </span>
+                <span>
+                    <div class="cuadrotexto">
+                        <h1 id="danzas">DANZAS DE LA PAZ</h1>
+                        <p>
+                            La ciudad de La Paz y sus provincias son el corazón del folclore boliviano. A lo largo del año, sus calles se llenan de color, música y devoción.
+                            <br>
+                            Ingresa tu nombre y selecciona una danza tradicional paceña para conocer mas de ella:
+                        </p> 
+                        <form id="formVisor">
+                            <input type="text" id="nombreUsuario" class="control-entrada" placeholder="Ingresa tu nombre..." autocomplete="off">
+                            <br>
+                            <select id="selectorDanza" class="control-selector">
+                                <option value="ninguna">-- Elige una danza --</option>
+                                <option value="morenada">Gran Morenada</option>
+                                <option value="caporales">Caporales de Corazón</option>
+                                <option value="diablada">Diablada Paceña</option>
+                                <option value="cueca">Cueca Paceña</option>
+                                <option value="cullaguada">Kullaguada</option>
+                            </select>
+                            <br>
+                            <button type="button" id="botonAceptar" class="cajabotonacep" style="cursor: pointer; margin-top: 5px; display: inline-block;">ACEPTAR</button>
+                        </form>
+
+                        <div id="visorContenido" class="visor-oculto">
+                            <img id="imagenDanza" src="" alt="Representación de la danza" class="img-visor">
+                            <p id="textoDanza" class="texto-visor"></p>
+                        </div>
+
+                        <script src="../js/danzas.js"></script>
+                    </div>
+                    <div class="">
+
+                    </div>
+                </span>
+            </div>
+        </section>
+        <footer>
+            <p>
+                &copy; 2026 Tercer Parcial INF113 - UMSA
+                <br>
+                Jhonatan Mateo Quispe Lecoña
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
